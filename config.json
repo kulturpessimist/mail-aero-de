@@ -1,0 +1,21 @@
+{
+	"users":{
+		"token": {
+			"name": "",
+			"smtp":{
+				"service": "",
+				"host": "",
+				"port": 0,
+				"secureConnection": false,
+				"name": "",
+				"auth":{
+					"user":"", 
+					"pass":""
+				},
+				"ignoreTLS": true,
+				"debug": false,
+				"maxConnections": 5
+			}
+		}
+	}
+}
