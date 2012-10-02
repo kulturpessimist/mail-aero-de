@@ -35,45 +35,13 @@ __REQUEST__
 __RESPONSE__
 	JSONP		</pre>
 			
-			<form class="form-inline hide" id="theform" action="" method="post">
-				<h2>You want to try it?</h2>
-				<p>
-					<label>B</label><input value="0" name="B" class="param"/>
-					<label>L</label><input value="0" name="L" class="param"/>
-					<label>R</label><input value="0" name="R" class="param"/>
-					<label>T</label><input value="0" name="T" class="param"/>
-					<label>O</label><input value="Portrait" name="O" class="param"/>
-				</p>
-				<p class="input-append">
-					<input class="span4" id="url" placeholder="Just try it!" type="text"><button 
-							class="btn btn-inverse" id="action" type="button">Go!</button>			
-				</p>
-			</form>
-		
 			<footer>
-				&copy; 2012 <a href="http://www.con.sume.org" target="_blank">con.sume.org</a>
+				&copy; 2012 <a href="http://con.sume.org" target="_blank">con.sume.org</a>
 			</footer>
 		<div>
 	</div>
 
 	<script src="/libs.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(function() {
-			$(document).shortcuts({
-				"ALT U": {
-					keys: [18, 85], desc: "Show URL Input.",
-					func: function() { 	$('.form-inline').slideDown() }
-				}
-			});
-			$('#url').val(document.location.href);
-			$('#action').click(function(){
-				var encoded = encodeURIComponent( $('#url').val() );
-				//document.location.href = "/api/"+encoded;
-				$('#theform').attr('action', '/api/'+encoded);
-				$('#theform').submit();
-			});
-		});
-	</script>
 	<script type="text/javascript">
 		var _gaq=[['_setAccount','UA-4234390-6'],['_trackPageview']];
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
